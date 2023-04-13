@@ -1,0 +1,24 @@
+[2023-04-13 11:25:05,213 ] 14 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-04-13 11:25:05,213 ] 21 root - INFO - Exporting collection data as pandas dataframe
+[2023-04-13 11:25:05,213 ] 21 root - INFO - Reading data from database: hotel_database and collection: hotel_collection
+[2023-04-13 11:25:10,873 ] 23 root - INFO - Found columns: Index(['_id', 'hotel', 'is_canceled', 'lead_time', 'arrival_date_year',
+       'arrival_date_month', 'arrival_date_week_number',
+       'arrival_date_day_of_month', 'stays_in_weekend_nights',
+       'stays_in_week_nights', 'adults', 'children', 'babies', 'meal',
+       'country', 'market_segment', 'distribution_channel',
+       'is_repeated_guest', 'previous_cancellations',
+       'previous_bookings_not_canceled', 'reserved_room_type',
+       'assigned_room_type', 'booking_changes', 'deposit_type', 'agent',
+       'company', 'days_in_waiting_list', 'customer_type', 'adr',
+       'required_car_parking_spaces', 'total_of_special_requests',
+       'reservation_status', 'reservation_status_date'],
+      dtype='object')
+[2023-04-13 11:25:10,874 ] 25 root - INFO - Dropping column: _id 
+[2023-04-13 11:25:10,933 ] 27 root - INFO - Row and columns in df: (119390, 32)
+[2023-04-13 11:25:10,934 ] 27 root - INFO - Save data in feature store
+[2023-04-13 11:25:11,020 ] 32 root - INFO - Create feature store folder if not available
+[2023-04-13 11:25:11,021 ] 35 root - INFO - Save df to feature store folder
+[2023-04-13 11:25:12,398 ] 40 root - INFO - split dataset into train and test set
+[2023-04-13 11:25:12,563 ] 44 root - INFO - create dataset directory folder if not available
+[2023-04-13 11:25:12,563 ] 49 root - INFO - Save df to feature store folder
+[2023-04-13 11:25:14,073 ] 61 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/04132023_112505/data_ingestion/feature_store/hotel_booking.csv', train_file_path='/config/workspace/artifact/04132023_112505/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/04132023_112505/data_ingestion/dataset/test.csv')

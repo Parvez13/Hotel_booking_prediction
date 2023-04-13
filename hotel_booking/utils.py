@@ -1,11 +1,11 @@
 import pandas as pd
 from hotel_booking.logger import logging
 from hotel_booking.exception import HotelBookingException
-from hotel.config import mongo_client
+from hotel_booking.config import mongo_client
 import os,sys
-import yaml
+#import yaml
 import numpy as np
-import dill
+#import dill
 
 def get_collection_as_dataframe(database_name:str,collection_name:str)->pd.DataFrame:
     """

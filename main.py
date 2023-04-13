@@ -4,7 +4,7 @@ print(__name__)
 if __name__ == "__main__":
     try:
         start_training_pipeline()
-        #output_file = start_training_pipeline()
-        print(output_file)
+        # output_file = start_training_pipeline()
+        # print(output_file)
     except Exception as e: 
         print(e)
