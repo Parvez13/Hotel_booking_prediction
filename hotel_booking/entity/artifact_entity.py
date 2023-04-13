@@ -1,0 +1,19 @@
+from dataclasses import dataclass 
+
+@dataclass
+class DataIngestionArtifact:...
+
+@dataclass
+class DataValidationArtifact:...
+
+@dataclass
+class DataTransformationArtifact:...
+
+@dataclass
+class ModeltrainerArtifact:...
+
+@dataclass
+class ModelEvaluationArtifact:...
+
+@dataclass
+class ModelPusherArtifact:...
